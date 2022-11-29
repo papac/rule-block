@@ -1,0 +1,17 @@
+{
+    "name": "papac/standbox",
+    "autoload": {
+        "psr-4": {
+            "RuleBlock\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Franck DAKIA",
+            "email": "dakiafranck@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
