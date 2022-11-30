@@ -17,4 +17,11 @@ class RuleBlockTest extends \PHPUnit\Framework\TestCase
         $result = $ruleBlock->evaluteRules(17);
         $this->assertEquals($result, "C'est un junior");
     } 
+
+    public function test_run_rule_cadre()
+    {
+        $ruleBlock = new RuleBlock();
+        $result = $ruleBlock->evaluteRules(20);
+        $this->assertEquals($result, "C'est un cadre");
+    }
 }
