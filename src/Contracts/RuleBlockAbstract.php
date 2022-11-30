@@ -11,10 +11,11 @@ abstract class RuleBlockAbstract
         $eligibleRule = null;
         foreach ($this->rules as $ruleClass) {
             $rule = new $ruleClass();
-            if ($rule->check($age)) {
-                $eligibleRule = $rule;
-                break;
+            if (!$rule->check($age)) {
+                continue;
             }
+            $eligibleRule = $rule;
+            break;
         }
 
         if (!$eligibleRule) {
